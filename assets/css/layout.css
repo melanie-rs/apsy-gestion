@@ -1,0 +1,381 @@
+/* ========================================
+   APSY - ESTRUCTURA GENERAL
+======================================== */
+
+/* Contenedor principal */
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    min-width: 250px;
+    min-height: 100vh;
+    background-color: var(--color-blanco);
+    border-right: 1px solid var(--color-borde);
+    display: flex;
+    flex-direction: column;
+    padding: 28px 18px 20px;
+}
+
+/* Marca */
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 8px 35px;
+}
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+    background-color: var(--color-borgona);
+    color: var(--color-blanco);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-family: var(--fuente-titulos);
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-borgona);
+    line-height: 1.1;
+}
+
+.brand-subtitle {
+    font-size: 9px;
+    letter-spacing: 1.1px;
+    color: var(--color-texto-secundario);
+    margin-top: 4px;
+}
+
+/* Navegación */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.nav-section-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #A69B9D;
+    padding: 0 10px;
+    margin-bottom: 9px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 12px 14px;
+    border-radius: var(--radio-medio);
+    color: var(--color-texto-secundario);
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.nav-link i {
+    width: 18px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.nav-link:hover {
+    background-color: var(--color-rosa);
+    color: var(--color-borgona);
+}
+
+.nav-link.active {
+    background-color: var(--color-rosa);
+    color: var(--color-borgona);
+    font-weight: 700;
+}
+
+/* Parte inferior del sidebar */
+.sidebar-bottom {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.salon-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-medio);
+}
+
+.salon-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-rosa);
+    color: var(--color-borgona);
+    border-radius: 9px;
+}
+
+.salon-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.salon-info strong {
+    font-size: 12px;
+    color: var(--color-texto);
+}
+
+.salon-info span {
+    font-size: 11px;
+    color: var(--color-texto-secundario);
+}
+
+.logout-link {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 10px 12px;
+    color: var(--color-texto-secundario);
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.logout-link:hover {
+    color: var(--color-rojo);
+}
+
+/* ÁREA PRINCIPAL */
+.main-area {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BARRA SUPERIOR */
+.topbar {
+    min-height: 76px;
+    padding: 0 35px;
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-texto-secundario);
+    font-size: 12px;
+}
+
+.breadcrumb i {
+    font-size: 9px;
+    color: #B7AAAC;
+}
+
+.breadcrumb-current {
+    color: var(--color-texto);
+    font-weight: 600;
+}
+
+/* Acciones superiores */
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.notification-button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: var(--color-texto-secundario);
+    font-size: 17px;
+}
+
+.notification-button:hover {
+    color: var(--color-borgona);
+}
+
+.notification-dot {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 7px;
+    height: 7px;
+    background-color: var(--color-rojo);
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+/* Perfil de usuario */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-rosa);
+    color: var(--color-borgona);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.user-info strong {
+    font-size: 12px;
+    color: var(--color-texto);
+}
+
+.user-info span {
+    font-size: 11px;
+    color: var(--color-texto-secundario);
+}
+
+/* CONTENIDO DE LAS PÁGINAS */
+.page-content {
+    flex: 1;
+    padding: 60px 80px !important;
+    background-color: #fff0f0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 210px;
+        min-width: 210px;
+        padding: 22px 12px;
+    }
+
+    .topbar {
+        padding: 0 22px;
+    }
+
+    .page-content {
+        padding: 25px 22px;
+    }
+}
+
+@media (max-width: 650px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        padding: 14px;
+        border-right: none;
+        border-bottom: 1px solid var(--color-borde);
+    }
+
+    .sidebar-brand {
+        padding: 0 5px 15px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .nav-section-title {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
+    .nav-link {
+        padding: 9px 10px;
+        font-size: 11px;
+        gap: 7px;
+    }
+
+    .nav-link i {
+        font-size: 13px;
+    }
+
+    .sidebar-bottom {
+        margin-top: 12px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .salon-card {
+        padding: 7px;
+    }
+
+    .logout-link {
+        padding: 8px;
+    }
+
+    .topbar {
+        min-height: 65px;
+        padding: 0 15px;
+    }
+
+    .topbar-actions {
+        gap: 10px;
+    }
+
+    .user-info {
+        display: none;
+    }
+
+    .page-content {
+        padding: 22px 15px;
+    }
+}
+
+/* Ajuste de márgenes del contenido principal */
+.main-area > .page-header,
+.main-area > .metrics-grid,
+.main-area > .dashboard-appointments,
+.main-area > .dashboard-bottom {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main-area > .page-header {
+    margin-top: 32px;
+}

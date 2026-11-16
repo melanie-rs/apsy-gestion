@@ -1,0 +1,113 @@
+/* ========================================
+   APSY - ESTILOS BASE
+   Colores, tipografías y reglas generales
+======================================== */
+
+/* Variables globales */
+:root {
+    --color-fondo: #FAF9F6;
+    --color-blanco: #FFFFFF;
+    --color-borgona: #6B2435;
+    --color-borgona-hover: #531B29;
+    --color-rosa: #F8E9EC;
+    --color-rosa-medio: #EBCDD3;
+
+    --color-texto: #302A2B;
+    --color-texto-secundario: #81777A;
+    --color-borde: #EAE5E2;
+
+    --color-verde: #287A55;
+    --color-verde-fondo: #E7F4EC;
+
+    --color-amarillo: #A66D13;
+    --color-amarillo-fondo: #FFF3D9;
+
+    --color-rojo: #B83B45;
+    --color-rojo-fondo: #FCEBED;
+
+    --fuente-principal: 'DM Sans', sans-serif;
+    --fuente-titulos: 'Playfair Display', serif;
+
+    --radio-chico: 8px;
+    --radio-medio: 12px;
+    --radio-grande: 18px;
+
+    --sombra-suave: 0 2px 12px rgba(48, 42, 43, 0.05);
+}
+
+/* Reinicio de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-texto);
+    font-weight: 600;
+}
+
+h1, h2 {
+    font-family: var(--fuente-titulos);
+}
+
+p {
+    color: var(--color-texto-secundario);
+}
+
+/* Enlaces */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Botones y campos */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Campos de formulario */
+input,
+select,
+textarea {
+    outline: none;
+}
+
+/* Selección de texto */
+::selection {
+    background-color: var(--color-rosa-medio);
+    color: var(--color-borgona);
+}

@@ -1,0 +1,207 @@
+/* ========================================
+   APSY - ESTILOS DEL DASHBOARD
+======================================== */
+
+/* FECHA DEL DASHBOARD */
+.dashboard-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--color-texto-secundario);
+}
+
+.dashboard-date i {
+    color: var(--color-borgona);
+}
+
+/* ENLACES DEL DASHBOARD */
+.dashboard-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-borgona);
+    font-size: 11px;
+    font-weight: 700;
+    transition: 0.2s ease;
+}
+
+.dashboard-link:hover {
+    color: var(--color-borgona-hover);
+    gap: 12px;
+}
+
+.dashboard-link i {
+    font-size: 10px;
+}
+
+/* TABLA DE PRÓXIMOS TURNOS */
+.dashboard-appointments {
+    margin-bottom: 22px;
+}
+
+.dashboard-appointments .card-header {
+    margin-bottom: 18px;
+}
+
+.dashboard-appointments .data-table td strong {
+    font-weight: 700;
+}
+
+/* SECCIÓN INFERIOR */
+.dashboard-bottom {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* ICONO DEL ENCABEZADO DE EQUIPO */
+.dashboard-section-icon {
+    color: var(--color-borgona);
+    font-size: 17px;
+}
+
+/* LISTA DE PROFESIONALES */
+.team-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.team-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.team-item:first-child {
+    padding-top: 0;
+}
+
+/* AVATAR DEL PROFESIONAL */
+.team-avatar {
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-rosa);
+    color: var(--color-borgona);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* INFORMACIÓN DEL PROFESIONAL */
+.team-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.team-info strong {
+    color: var(--color-texto);
+    font-size: 12px;
+}
+
+.team-info span {
+    color: var(--color-texto-secundario);
+    font-size: 10px;
+}
+
+/* CANTIDAD DE TURNOS */
+.team-count {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.team-count strong {
+    color: var(--color-borgona);
+    font-size: 16px;
+}
+
+.team-count span {
+    color: var(--color-texto-secundario);
+    font-size: 10px;
+}
+
+/* RECORDATORIO */
+.dashboard-reminder {
+    padding: 22px;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.reminder-icon {
+    width: 39px;
+    height: 39px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background-color: var(--color-blanco);
+    color: var(--color-borgona);
+    font-size: 16px;
+}
+
+.reminder-content {
+    flex: 1;
+}
+
+.reminder-content > strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reminder-content h3 {
+    font-family: var(--fuente-principal);
+    color: var(--color-borgona);
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.reminder-content p {
+    color: #745D63;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.reminder-content .dashboard-link {
+    margin-top: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .dashboard-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .dashboard-appointments .card-header {
+        align-items: flex-start;
+    }
+
+    .dashboard-appointments .data-table {
+        min-width: 650px;
+    }
+
+    .dashboard-reminder {
+        padding: 17px;
+    }
+}
